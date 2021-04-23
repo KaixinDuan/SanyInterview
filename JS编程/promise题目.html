@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+    <script>
+        var promiseList =[]
+        for(var i=0;i<10;i++){
+            let promise = new Promise((resolve)=>{
+                const sec= Math.floor(Math.random()*10);
+                console.log(sec)
+                setTimeout(()=>{resolve(i)},sec*1000)
+            })
+            promiseList.push(promise)
+        }
+        // 1.以上任务任意一个任务返回，输出值
+
+        // 2.以上任务都完成，输出值
+
+        // 3.分组执行，每组2个任务并行执行,输出值
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
